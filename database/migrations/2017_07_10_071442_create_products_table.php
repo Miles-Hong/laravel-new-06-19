@@ -18,7 +18,9 @@ class CreateProductsTable extends Migration
 			$table->string('prod_name')->unique();
 			$table->string('erp_id');
 			$table->string('prod_desc');
+			$table->string('prod_desc_cht');
 			$table->text('prod_spec');
+			$table->text('prod_spec_cht');
             $table->timestamps();
         });
     }
